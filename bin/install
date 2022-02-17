@@ -61,7 +61,7 @@ install_elixir_ref() {
   # Build from source in a subshell because we don't want to disturb current working dir
   # installing using DESTDIR makes sure there are no tempfiles in the install dir
   # and fixes compatibility issues with the elixir-ls language server project
-  (cd $install_path; make clean test DESTDIR=$install_path install)
+  (cd $install_path; make clean compile DESTDIR=$install_path install)
 
   # handle the result
   if [ $? -ne 0 ]; then
