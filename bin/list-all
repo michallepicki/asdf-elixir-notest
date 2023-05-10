@@ -10,7 +10,7 @@
 # STDOUT. Otherwise, nothing is written to STDOUT and an error message is
 # written to STDERR.
 download_hex_pm_builds() {
-  local releases_url='https://repo.hex.pm/builds/elixir/builds.txt'
+  local releases_url='https://builds.hex.pm/builds/elixir/builds.txt'
 
   if ! curl -fs $releases_url; then
     cat >&2 <<EOS
