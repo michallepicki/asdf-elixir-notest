@@ -147,7 +147,7 @@ get_download_url_for_version() {
     version="v${version}"
   fi
 
-  echo "https://repo.hex.pm/builds/elixir/${version}.zip"
+  echo "https://builds.hex.pm/builds/elixir/${version}.zip"
 }
 
 
